@@ -5,10 +5,10 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MainTest {
+public class MainTest {
 
     @Test
-    void testElevatorCarga(){
+    public void testElevatorCarga(){
         Main.Elevator elevator = new Main.Elevator(Main.TypeElevator.MONTACARGA);
 
         Main.Carga carga1 = new Main.Carga(500);
@@ -23,7 +23,7 @@ class MainTest {
     }
 
     @Test
-    void testAuthPerson() {
+    public void testAuthPerson() {
         Main.Elevator elevator = new Main.Elevator(Main.TypeElevator.PUBLICO);
 
         Main.Person person1 = new Main.Person("Joaco", 100);
@@ -48,7 +48,7 @@ class MainTest {
     }
 
     @Test
-    void testCarga() {
+    public void testCarga() {
         Main.Elevator elevator = new Main.Elevator(Main.TypeElevator.PUBLICO);
 
         Main.Person person1 = new Main.Person("Joaco", 100);
